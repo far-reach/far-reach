@@ -2,7 +2,7 @@
 
 # far-reach
 
-**`Engineer who ships. Researcher who's learning to.`**
+**`Engineer who ships. Researcher who's learning too.`**
 
 *Deep learning for the things that crack, corrode, and compound.*
 
@@ -21,7 +21,7 @@ Trained originally as an offshore engineer. Taught myself deep learning because 
 ### What I'm actually working on
 
 🏗️ &nbsp; **Automated damage detection for UAV-based infrastructure inspection**
-A three-stage deep learning pipeline — ResNet50 classification, DeepLabV3+ segmentation, UAV grid simulation — trained on CPU because that's what I had. 85.69% accuracy across four damage classes, 61 FPS on CPU, 80% zone detection in simulated inspection. Full reproducibility, MIT licensed. &nbsp; **Manuscript under review at *Structures* (Elsevier, IF 4.3).**
+A three-stage deep learning pipeline — ResNet50 classification, DeepLabV3+ segmentation, UAV grid simulation — trained on CPU because that's what I had. 85.69% accuracy across four damage classes, 61 FPS on CPU, 80% zone detection in simulated inspection. Full reproducibility, MIT licensed. &nbsp; **Preprint: [doi.org/10.31224/7685](https://doi.org/10.31224/7685)**
 
 📊 &nbsp; **Quantitative tools for gold and macro cycles**
 A dashboard and algorithmic framework for tracking cycle-based market structure. In active private development. I lost a lot of money learning what I know — now I'm building the tool I wish I'd had.
@@ -39,7 +39,7 @@ Python  ·  PyTorch  ·  OpenCV  ·  scikit-learn  ·  NumPy  ·  Pandas
 ### Featured
 
 **[`structural-crack-detection`](https://github.com/far-reach/structural-crack-detection)**
-Code, pretrained weights (GitHub Releases), and results for the *Structures* submission. Reviewer-ready. Reproducible.
+Code, pretrained weights (GitHub Releases), and results for the preprint at [doi.org/10.31224/7685](https://doi.org/10.31224/7685). Reproducible from open datasets.
 
 ---
 
