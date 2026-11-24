@@ -15,11 +15,13 @@ Trained originally as an offshore engineer. Taught myself deep learning because 
 
 ### What I'm actually working on
 
-🏗️ **Automated damage detection for UAV-based infrastructure inspection.** A three-stage deep learning pipeline: ResNet50 classification, DeepLabV3+ segmentation, UAV grid simulation. Trained on CPU because that's what I had. 85.69% accuracy across four damage classes, 61 FPS on CPU, 80% zone detection in simulated inspection. Full reproducibility, MIT licensed. Preprint: [doi.org/10.31224/7685](https://doi.org/10.31224/7685)
+🏗️ **Screen, then confirm: drone inspection that looks inside concrete.** Cameras only see the surface. So small drones screen every zone of a structure with a network of 0.14 M parameters, and a contact unit takes a single ultrasonic reading only where they flag damage. Both stages are tested on public data from independent labs, on specimens the models never saw. In simulation it finds 72% of what testing every zone finds, with 27% of the contacts. No hardware built yet; every assumption is stated and varied.
 
 <p align="center">
-  <img src="./pipeline.svg" alt="Animated UAV damage detection pipeline" width="680"/>
+  <img src="./screen-confirm.svg" alt="Animated screen, then confirm pipeline: scout, flag, confirm, fuse" width="680"/>
 </p>
+
+🔎 **Correcting my own preprint.** When I audited the code of my first paper ([doi.org/10.31224/7685](https://doi.org/10.31224/7685)) I found a class-order bug and a deeper flaw: each damage class came from a single image source, so the classifier had partly learned the source, not the damage. The new paper documents both, regenerates every affected result, and shows how much each flaw actually mattered. Published in full rather than fixed quietly.
 
 📊 **Quantitative tools for gold and macro cycles.** A dashboard and algorithmic framework for tracking cycle-based market structure. In active private development. I lost a lot of money learning what I know. Now I'm building the tool I wish I'd had.
 
@@ -38,7 +40,7 @@ Trained originally as an offshore engineer. Taught myself deep learning because 
 
 ### Featured
 
-[`structural-crack-detection`](https://github.com/far-reach/structural-crack-detection): code, pretrained weights (GitHub Releases), and results for the preprint at [doi.org/10.31224/7685](https://doi.org/10.31224/7685). Reproducible from open datasets.
+[`structural-crack-detection`](https://github.com/far-reach/structural-crack-detection): code, results and weights for both studies, the screen-then-confirm paper (v2.0) and the corrected preprint (v1.0). Every number traces to a result file with its run manifest. Reproducible from open datasets.
 
 ---
 
